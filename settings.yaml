@@ -1,0 +1,17 @@
+show_last_poster_username:
+  type: bool
+  default: false
+  description:
+    en: "Show last poster usernames instead profile avatars in all topic list pages."
+
+show_last_poster_column_first:
+  type: bool
+  default: false
+  description:
+    en: "Show topic authors in the first column in all topic list pages."
+
+show_last_poster_column_last:
+  type: bool
+  default: false
+  description:
+    en: "Show last poster in the last column in all topic list pages. Above setting must be disabled. Leaving both disabled shows default column order."
