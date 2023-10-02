@@ -1,8 +1,8 @@
 {
-  "name": "Discourse Topic Last Poster",
+  "name": "Discourse Topic Poster",
   "component": true,
   "about_url": "https://github.com/Lillinator/topic-last-poster/blob/main/README.md",
   "license_url": "https://github.com/Lillinator/topic-last-poster/blob/main/LICENSE",
-  "authors": "@Lillinator",
-  "theme_version": "1.0"
+  "authors": "@Lilly",
+  "theme_version": "2.0"
 }
