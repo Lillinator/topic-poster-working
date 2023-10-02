@@ -1,10 +1,21 @@
 <PluginOutlet @name="above-latest-topic-list-item" @connectorTagName="div" />
-<div class="topic-poster">
+
+{{#unless (theme-setting 'show_topic_author_column_last_on_categories_page')}}
+   <div class="topic-poster">
+    <UserLink @user={{this.topic.creator}}>
+      {{avatar this.topic.creator imageSize="large"}}
+    </UserLink>
+    <UserAvatarFlair @user={{this.topic.creator}} />
+   </div>
+{{#/unless}}
+
+{{!--<div class="topic-poster">
   <UserLink @user={{this.topic.lastPosterUser}}>
     {{avatar this.topic.lastPosterUser imageSize="large"}}
   </UserLink>
   <UserAvatarFlair @user={{this.topic.lastPosterUser}} />
-</div>
+</div>--}}
+
 <div class="main-link">
   <div class="top-row">
     {{raw "topic-status" topic=this.topic}}
@@ -39,3 +50,11 @@
     >{{format-date this.topic.bumpedAt format="tiny" noTitle="true"}}</a>
   </div>
 </div>
+{{#if (theme-setting 'show_topic_author_column_last_on_categories_page')}}
+   <div class="topic-poster">
+    <UserLink @user={{this.topic.creator}}>
+      {{avatar this.topic.creator imageSize="large"}}
+    </UserLink>
+    <UserAvatarFlair @user={{this.topic.creator}} />
+   </div>
+{{#/if}}
