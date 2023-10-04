@@ -1,23 +1,24 @@
-show_author_username:
-  type: bool
-  default: false
+topic_author_or_last_poster:
+  type: enum
+  default: "Topic Author"
+  choices:
+    - Topic Author
+    - Last Poster
   description:
-    en: "Show usernames instead profile avatars in all topic list pages."
+    en: "Show the topic author or last poster avatar."
 
-show_topic_author_column_first:
-  type: bool
-  default: false
+avatar_column_placement:
+  type: enum
+  default: "Default"
+  choices:
+    - Default
+    - First
+    - Last
   description:
-    en: "Show topic authors in the first column in all topic list pages."
+    en: "Author or poster avatar column placement."
 
-show_topic_author_column_last:
+show_username_instead:
   type: bool
   default: false
   description:
-    en: "Show last poster in the last column in all topic list pages. Above setting must be disabled. Leaving both disabled shows default column order."
-
-show_author_column_last_on_categories_page:
-  type: bool
-  default: false
-  description:
-    en: "Show topic author in the last column on the desktop view category homepage. Leave disabled for default first column."
+    en: "Show usernames instead of avatars in all topic list pages."
