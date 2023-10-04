@@ -1,9 +1,9 @@
-    {{#if showParticipants}}
-      {{raw "list/posters-column" posters=topic.participants}}
-    {{/if}}
+{{#if showParticipants}}
+  {{raw "list/posters-column" posters=topic.participants}}
+{{/if}}
 
 
-  {{#if (theme-setting 'show_topic_author_column_first')}}
+{{#if (theme-setting 'show_author_column_first')}}
 
     <td class='author topic-list-data'>
       <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
