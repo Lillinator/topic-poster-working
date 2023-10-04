@@ -2,7 +2,7 @@ show_author_username:
   type: bool
   default: false
   description:
-    en: "Show last poster usernames instead profile avatars in all topic list pages."
+    en: "Show usernames instead profile avatars in all topic list pages."
 
 show_topic_author_column_first:
   type: bool
