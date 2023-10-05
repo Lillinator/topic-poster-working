@@ -32,7 +32,7 @@
   }
 }
 
-@if $show_poster_column_last =="true" {
+@else if $show_poster_column_last =="true" {
   .topic-list .topic-list-data {
     .hidden-avatar {
       +.right {
