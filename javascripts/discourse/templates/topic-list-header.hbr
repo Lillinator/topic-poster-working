@@ -1,4 +1,4 @@
-  {{#if (theme-setting 'show_author_column_first')}}
+  {{#if (theme-setting 'show_poster_column_first')}}
 
    {{#if showPosters}}
       {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
@@ -26,7 +26,7 @@
   {{~raw-plugin-outlet name="topic-list-header-after"~}}
 
 
-  {{else if (theme-setting 'show_author_column_last')}}
+  {{else if (theme-setting 'show_poster_column_last')}}
 
   {{~raw-plugin-outlet name="topic-list-header-before"~}}
   {{#if bulkSelectEnabled}}
