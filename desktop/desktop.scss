@@ -27,7 +27,6 @@
   .topic-list-header {
     display: none;
   }
-
   .author.topic-list-data {
     width: 70px;
   }
@@ -39,5 +38,12 @@
 
 .topic-list-item .author {
     z-index: 1;
-//    background-color: rgba(var(--primary-low-rgb), 0.85);
+}
+
+.topic-list-item .last-post a {
+  color: var(--primary-medium);
+}
+
+.topic-list-item .last-post {
+    z-index: 1;
 }
