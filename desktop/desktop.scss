@@ -1,14 +1,17 @@
 @if $show_poster_column_first =="true" {
-  .poster-avatar {
-    text-align: left;
-  }
-}
-@elseif $show_poster_column_last =="false" {
   .topic-list .posters {
     width: 70px;
   }
   .poster-avatar {
-    text-align: center;
+    text-align: left;
+  }
+}
+@elseif $show_poster_column_last =="true" {
+  .topic-list .posters {
+    width: 70px;
+  }
+  .poster-avatar {
+    text-align: right;
   }
 }
 @else {
@@ -16,7 +19,7 @@
     width: 70px;
   }
   .poster-avatar {
-    text-align: right;
+    text-align: center;
   }
 }
 
