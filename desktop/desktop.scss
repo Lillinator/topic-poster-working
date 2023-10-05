@@ -4,7 +4,7 @@
   }
 }
 
-@if $show_poster_column_last =="false" || $show_poster_column_first =="false" {
+@if $show_poster_column_last =="false" && $show_poster_column_first =="false" {
   .topic-list .posters {
     width: 70px;
   }
