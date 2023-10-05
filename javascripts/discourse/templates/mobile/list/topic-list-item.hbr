@@ -1,4 +1,4 @@
-{{#if (theme-setting 'show_author_column_last')}}
+{{#if (theme-setting 'show_poster_column_last')}}
 
     <td class="topic-list-data">
     {{~raw-plugin-outlet name="topic-list-before-columns"}}
