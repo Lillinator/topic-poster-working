@@ -3,7 +3,7 @@
     <td class="topic-list-data">
     {{~raw-plugin-outlet name="topic-list-before-columns"}}
 
-  {{#if (theme-setting 'show_author_username')}}
+  {{#if (theme-setting 'show_username_instead')}}
         <div class='hidden-avatar'></div>
         {{else}}
         <div class='pull-right'>
@@ -51,7 +51,7 @@
           {{~discourse-tags topic mode="list"}}
         </span>
 
-          {{#if (theme-setting 'show_author_username')}}
+          {{#if (theme-setting 'show_username_instead')}}
             <div class="pull-left with-username">
               <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
                 {{topic.creator.username}}
@@ -79,7 +79,7 @@
       <td class="topic-list-data">
     {{~raw-plugin-outlet name="topic-list-before-columns"}}
 
-  {{#if (theme-setting 'show_author_username')}}
+  {{#if (theme-setting 'show_username_instead')}}
         <div class='hidden-avatar'></div>
         {{else}}
         <div class='pull-left'>
@@ -126,7 +126,7 @@
           {{~/unless}}
           {{~discourse-tags topic mode="list"}}
         </span>
-          {{#if (theme-setting 'show_author_username')}}
+          {{#if (theme-setting 'show_username_instead')}}
             <div class="pull-right with-username">
               <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
                 {{topic.creator.username}}
