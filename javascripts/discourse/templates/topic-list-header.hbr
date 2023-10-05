@@ -1,10 +1,11 @@
   {{#if (theme-setting 'show_poster_column_first')}}
 
    {{#if showPosters}}
-    {{#unless (theme-setting 'show_author_in_topic_lists')}}
-    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
-    {{/unless}}
+    {{#if (theme-setting 'show_author_in_topic_lists')}}
     {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
+    {{else}}
+    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
+    {{/if}}
    {{/if}}
 
   {{~raw-plugin-outlet name="topic-list-header-before"~}}
@@ -54,10 +55,11 @@
   {{~raw-plugin-outlet name="topic-list-header-after"~}}
 
    {{#if showPosters}}
-    {{#unless (theme-setting 'show_author_in_topic_lists')}}
-    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
-    {{/unless}}
+    {{#if (theme-setting 'show_author_in_topic_lists')}}
     {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
+    {{else}}
+    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
+    {{/if}}
    {{/if}}
 
   {{else}}
@@ -73,10 +75,11 @@
   {{raw "topic-list-header-column" order='default' name=listTitle bulkSelectEnabled=bulkSelectEnabled showBulkToggle=toggleInTitle canBulkSelect=canBulkSelect canDoBulkActions=canDoBulkActions}}
   {{raw-plugin-outlet name="topic-list-header-after-main-link"}}
    {{#if showPosters}}
-    {{#unless (theme-setting 'show_author_in_topic_lists')}}
-    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
-    {{/unless}}
+    {{#if (theme-setting 'show_author_in_topic_lists')}}
     {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
+    {{else}}
+    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
+    {{/if}}
    {{/if}}
   {{raw "topic-list-header-column" sortable=sortable number='true' order='posts' name='replies' ariaLabel=(i18n "sr_replies")}}
   {{#if showLikes}}
