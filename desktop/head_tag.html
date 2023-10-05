@@ -2,12 +2,21 @@
 
 <PluginOutlet @name="above-latest-topic-list-item" @connectorTagName="div" />
 
+{{#if (theme-setting 'show_author_in_topic_lists')}}
   <div class="topic-poster">
     <UserLink @user={{this.topic.creator}}>
       {{avatar this.topic.creator imageSize="large"}}
     </UserLink>
     <UserAvatarFlair @user={{this.topic.creator}} />
    </div>
+{{else}}
+  <div class="topic-poster">
+  <UserLink @user={{this.topic.lastPosterUser}}>
+    {{avatar this.topic.lastPosterUser imageSize="large"}}
+  </UserLink>
+  <UserAvatarFlair @user={{this.topic.lastPosterUser}} />
+  </div>
+{{/if}}
   
 <div class="main-link">
   <div class="top-row">
