@@ -7,7 +7,9 @@
     <td class='author topic-list-data'>
       <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
         {{#if (theme-setting 'show_username_instead')}}
+         <div class='poster-info'>
           {{topic.creator.username}}
+         </div>
           {{else}}
           {{avatar topic.creator imageSize="45"}}
         {{/if}}
