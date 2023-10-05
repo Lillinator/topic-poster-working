@@ -1,4 +1,4 @@
-@if $show_author_column_last =="false" {
+@if $show_poster_column_last =="false" {
   .topic-list .topic-list-data {
     .hidden-avatar {
       +.right {
@@ -32,7 +32,7 @@
   }
 }
 
-@if $show_author_column_last =="true" {
+@if $show_poster_column_last =="true" {
   .topic-list .topic-list-data {
     .hidden-avatar {
       +.right {
