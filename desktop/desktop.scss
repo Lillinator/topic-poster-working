@@ -1,4 +1,4 @@
-@if $show_poster_column_first="true" {
+@if $show_poster_column_first =="true" {
   .poster-avatar {
     text-align: left;
   }
