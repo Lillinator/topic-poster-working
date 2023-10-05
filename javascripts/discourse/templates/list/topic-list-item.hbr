@@ -11,7 +11,7 @@
           {{topic.creator.username}}
          </div>
           {{else}}
-          {{avatar topic.creator imageSize="45"}}
+          {{avatar topic.creator imageSize="medium"}}
         {{/if}}
       </a>
     </td>
