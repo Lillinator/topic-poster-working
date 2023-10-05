@@ -1,7 +1,7 @@
 <script type="text/x-handlebars" data-template-name="components/latest-topic-list-item">  
 
 <PluginOutlet @name="above-latest-topic-list-item" @connectorTagName="div" />
-
+  
 {{#if (theme-setting 'show_author_in_topic_lists')}}
   <div class="topic-poster">
     <UserLink @user={{this.topic.creator}}>
@@ -17,7 +17,7 @@
   <UserAvatarFlair @user={{this.topic.lastPosterUser}} />
   </div>
 {{/if}}
-  
+
 <div class="main-link">
   <div class="top-row">
     {{raw "topic-status" topic=this.topic}}
@@ -52,5 +52,5 @@
     >{{format-date this.topic.bumpedAt format="tiny" noTitle="true"}}</a>
   </div>
 </div>
-  
+
 </script>
