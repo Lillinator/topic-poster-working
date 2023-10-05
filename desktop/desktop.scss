@@ -3,8 +3,7 @@
     text-align: left;
   }
 }
-
-@if $show_poster_column_last =="false" && $show_poster_column_first =="false" {
+@elseif $show_poster_column_last =="false" {
   .topic-list .posters {
     width: 70px;
   }
@@ -12,13 +11,12 @@
     text-align: center;
   }
 }
-
-
-@if $show_poster_column_last =="true" {
-  .topic-list .topic-list-data:last-of-type {
+@else {
+  .topic-list .posters {
     width: 70px;
+  }
+  .poster-avatar {
     text-align: right;
-    //    padding-left: 30px;
   }
 }
 
