@@ -7,7 +7,7 @@
 
     <td class='author topic-list-data'>
       <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
-        {{#if (theme-setting 'show_author_username')}}
+        {{#if (theme-setting 'show_username_instead')}}
           {{topic.creator.username}}
           {{else}}
           {{avatar topic.creator imageSize="45"}}
@@ -178,8 +178,8 @@
   {{~raw-plugin-outlet name="topic-list-after-columns"}}
 
     <td class='author topic-list-data'>
-      <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
-        {{#if (theme-setting 'show_author_username')}}
+      <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.}}">
+        {{#if (theme-setting 'show_username_instead')}}
           {{topic.creator.username}}
           {{else}}
           {{avatar topic.creator imageSize="45"}}
@@ -239,7 +239,7 @@
 
     <td class='author topic-list-data'>
       <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
-        {{#if (theme-setting 'show_author_username')}}
+        {{#if (theme-setting 'show_username_instead')}}
           {{topic.creator.username}}
           {{else}}
           {{avatar topic.creator imageSize="45"}}
