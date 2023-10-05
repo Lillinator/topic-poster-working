@@ -17,7 +17,7 @@
     <td class="last-post topic-list-data">
     {{#if (theme-setting 'show_username_instead')}}
      <div class='poster-info'>
-      <a href="/u/{{topic.last_poster_username}}" data-auto-route="true" data-user-card="{{topic.last_poster_username}}">{{topic.last_poster_username}}</a>
+      {{topic.last_poster_username}}
      </div>
     {{else}}
      <div class='poster-avatar'>
