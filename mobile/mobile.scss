@@ -1,4 +1,4 @@
-@if $show_poster_column_last =="false" {
+@if $poster_column_placement !="Last" {
   .topic-list .topic-list-data {
     .hidden-avatar {
       +.right {
@@ -32,7 +32,7 @@
   }
 }
 
-@else if $show_poster_column_last =="true" {
+@else if $poster_column_placement =="Last" {
   .topic-list .topic-list-data {
     .hidden-avatar {
       +.right {
