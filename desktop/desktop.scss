@@ -1,4 +1,4 @@
-@if $poster_column_placement =="First" {
+@if $show_poster_column_first =="true" {
   .topic-list .posters {
     width: 70px;
   }
@@ -6,7 +6,7 @@
     text-align: center;
   }
 }
-@else if $poster_column_placement =="Last" {
+@elseif $show_poster_column_last =="true" {
   .topic-list .posters {
     width: 70px;
   }
