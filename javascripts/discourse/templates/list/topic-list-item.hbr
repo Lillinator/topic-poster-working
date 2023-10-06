@@ -1,7 +1,3 @@
-{{#if showParticipants}}
-  {{raw "list/posters-column" posters=topic.participants}}
-{{/if}}
-
 {{#if (theme-setting 'show_poster_column_first')}}
   {{#if (theme-setting 'show_author_in_topic_lists')}}
     <td class='author topic-list-data'>
