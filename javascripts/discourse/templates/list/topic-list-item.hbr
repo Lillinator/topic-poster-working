@@ -2,7 +2,7 @@
   {{raw "list/posters-column" posters=topic.participants}}
 {{/if}}
 
-{{#if (eq theme-setting.poster_column_placement "First")}}
+{{#if (theme-setting 'show_poster_column_first')}}
   {{#if (theme-setting 'show_author_in_topic_lists')}}
     <td class='author topic-list-data'>
       <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
@@ -111,7 +111,7 @@
 
   {{~raw-plugin-outlet name="topic-list-after-columns"}}
 
-{{else if (eq theme-setting.poster_column_placement "Last")}}
+  {{else if (theme-setting 'show_poster_column_last')}}
 
     {{~raw-plugin-outlet name="topic-list-before-columns"}}
 
