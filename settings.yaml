@@ -3,16 +3,15 @@ show_author_in_topic_lists:
   default: false
   description:
     en: "Show the topic author instead of last poster in all topic lists. Disabled shows the last poster (not multiple participants)."
-show_poster_column_first:
-  type: bool
-  default: false
+poster_column_placement:
+  type: enum
+  default: "Default"
+  choices:
+    - Default
+    - First
+    - Last
   description:
-    en: "Show poster avatar in the first column in all topic list pages."
-show_poster_column_last:
-  type: bool
-  default: false
-  description:
-    en: "Show poster avatar in the last column in all topic list pages. Above setting must be disabled. Leaving both disabled shows default column order."
+    en: "Poster column placement in all topic list pages."
 show_username_instead:
   type: bool
   default: false
