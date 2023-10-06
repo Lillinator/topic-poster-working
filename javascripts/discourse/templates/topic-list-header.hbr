@@ -1,4 +1,4 @@
-{{#if (eq theme-setting.poster_column_placement "First")}}
+  {{#if (theme-setting 'show_poster_column_first')}}
 
    {{#if showPosters}}
     {{#if (theme-setting 'show_author_in_topic_lists')}}
@@ -30,7 +30,7 @@
   {{~raw-plugin-outlet name="topic-list-header-after"~}}
 
 
-{{else if (eq theme-setting.poster_column_placement "Last")}}
+  {{else if (theme-setting 'show_poster_column_last')}}
 
   {{~raw-plugin-outlet name="topic-list-header-before"~}}
   {{#if bulkSelectEnabled}}
