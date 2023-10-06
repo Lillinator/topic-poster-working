@@ -4,7 +4,7 @@
     {{#if (theme-setting 'show_author_in_topic_lists')}}
     {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
     {{else}}
-    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
+    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last-poster')}}
     {{/if}}
    {{/if}}
 
@@ -58,7 +58,7 @@
     {{#if (theme-setting 'show_author_in_topic_lists')}}
     {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
     {{else}}
-    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
+    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last-poster')}}
     {{/if}}
    {{/if}}
 
@@ -78,7 +78,7 @@
     {{#if (theme-setting 'show_author_in_topic_lists')}}
     {{raw "topic-list-header-column" order='posters' forceName=(theme-i18n "author") }}
     {{else}}
-    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last_poster')}}
+    {{raw "topic-list-header-column" sortable='true' order='activity' forceName=(theme-i18n 'last-poster')}}
     {{/if}}
    {{/if}}
   {{raw "topic-list-header-column" sortable=sortable number='true' order='posts' name='replies' ariaLabel=(i18n "sr_replies")}}
