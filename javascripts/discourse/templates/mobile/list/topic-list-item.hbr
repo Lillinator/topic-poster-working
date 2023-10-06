@@ -1,4 +1,4 @@
-{{#if (eq theme-setting 'poster_column_placement' "Last")}}
+{{#if (eq theme-setting.poster_column_placement "Last")}}
 
     <td class="topic-list-data">
     {{~raw-plugin-outlet name="topic-list-before-columns"}}
