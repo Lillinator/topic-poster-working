@@ -6,7 +6,7 @@
     text-align: center;
   }
 }
-@elseif $show_poster_column_last =="true" {
+@else if $show_poster_column_last =="true" {
   .topic-list .posters {
     width: 70px;
   }
