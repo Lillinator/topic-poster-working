@@ -8,6 +8,7 @@
          </div>
           {{else}}
           {{avatar topic.creator imageSize="medium"}}
+          <UserAvatarFlair @user={{this.topic.creator}} />
         {{/if}}
       </a>
     </td>
